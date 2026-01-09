@@ -1,0 +1,36 @@
+export const colors = {
+  dark: {
+    bg: '#020617',
+    text: '#FFFFFF',
+    muted: 'rgba(255,255,255,0.65)',
+    muted2: 'rgba(255,255,255,0.55)',
+    placeholder: 'rgba(255,255,255,0.5)',
+    card: 'rgba(255,255,255,0.06)',
+    card2: 'rgba(255,255,255,0.08)',
+    stroke: 'rgba(255,255,255,0.10)',
+    stroke2: 'rgba(255,255,255,0.08)',
+    image: 'rgba(255,255,255,0.10)',
+    primary: '#FF5A5F',
+    primarySoft: 'rgba(255,90,95,0.18)',
+    primaryStroke: 'rgba(255,90,95,0.35)',
+    primaryTextOn: '#081018',
+  },
+  light: {
+    bg: '#FFFFFF',
+    text: '#0B1220',
+    muted: 'rgba(11,18,32,0.65)',
+    muted2: 'rgba(11,18,32,0.55)',
+    placeholder: 'rgba(11,18,32,0.45)',
+    card: 'rgba(11,18,32,0.06)',
+    card2: 'rgba(11,18,32,0.08)',
+    stroke: 'rgba(11,18,32,0.10)',
+    stroke2: 'rgba(11,18,32,0.08)',
+    image: 'rgba(11,18,32,0.10)',
+    primary: '#FF5A5F',
+    primarySoft: 'rgba(255,90,95,0.14)',
+    primaryStroke: 'rgba(255,90,95,0.30)',
+    primaryTextOn: '#081018',
+  },
+} as const;
+
+export type ThemeColors = typeof colors.dark;
